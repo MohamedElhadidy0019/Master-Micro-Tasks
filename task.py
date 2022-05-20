@@ -23,11 +23,36 @@ class MplCanvas(FigureCanvasQTAgg):
 
 
 def is_integer(txt):
+    '''
+    check if the string is an integer
+
+    Parameters
+    ----------
+    txt: string
+
+    Returns
+    -------
+    boolean
+        true if the string is an integer
+    
+    '''
     is_positive_integer = txt.isdigit()
     is_negative_integer =  txt.startswith("-") and txt[1:].isdigit()
     is_integer = is_positive_integer or is_negative_integer
     return is_integer
 def is_valid_eq(equation):
+    '''
+    check if the string is a valid equation
+
+    Parameters
+    ----------
+    equation: string
+    
+    Returns
+    -------
+    boolean
+        true if the string is a valid equation
+    '''
     allowed = set('.'+'('+')'+' '+'X'+'x'+string.digits + '-' + '+' + '*'+ '/' + '^' )
     return (set(equation) <= allowed)
 
@@ -86,7 +111,7 @@ class Window(QWidget):
 
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Nested Layouts Example")
+        self.setWindowTitle("PYPY Plotter")
         # Create an outer layout
         outerLayout = QVBoxLayout()
        
