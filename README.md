@@ -3,10 +3,10 @@
   Function Plotter 
 </h1>
 
+<b> A function plotter done using Pyqt5 and matplotlib 
+ </b>
 
 <p align="center">
-  <b> A function plotter done using Pyqt5 and matplotlib 
- </b>
    <a style="text-decoration:none" >
     <img src="./screenshots/s1.png" alt="Parser Badge"width="300">
   </a>
